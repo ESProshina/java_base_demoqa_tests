@@ -1,32 +1,15 @@
 package tests;
-
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
+//import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
-import static org.openqa.selenium.bidi.script.LocalValue.setValue;
+//import static org.openqa.selenium.bidi.script.LocalValue.setValue;
 
-public class TextBoxTests {
+public class TextBoxTests extends TestBase {
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
-        Configuration.browser = "chrome";
-        Configuration.browserVersion = "144.0";
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.timeout = 10000; //defolt 4000
-
-
-    }
-
-
-    @Test
+     @Test
     void successfulFillFormTest() {
-
-
         open("/text-box");
         $("[id=userName]").setValue("Alex Black");
         $("[id=userEmail]").setValue("alex@black.com");
