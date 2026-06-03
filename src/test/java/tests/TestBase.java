@@ -11,7 +11,7 @@ public class TestBase {
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
         Configuration.browser = "chrome";
-        Configuration.browserVersion = "144.0";
+        //  Configuration.browserVersion = "144.0";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.timeout = 10000; //defolt 4000
     }
