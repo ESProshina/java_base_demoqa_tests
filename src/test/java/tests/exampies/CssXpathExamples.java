@@ -17,12 +17,16 @@ public class CssXpathExamples {
     void cssXpath(){
  //  <input type="email" class="inputtext login_form_input_box" name="email" id="email" data-tesid="email">
         $("[data-tesid=email]").setValue("1");
-        $(by("id",attributeValue= "email");
-        $(by(attributeName:"data-tesid", attributeName:"email":)).setValue("1");
-        $x(xpachExpression:"//*[@data-tesid='email']") setValue("1");
+        $(by("data-tesid", "email" )).setValue("1");
+        $x(  "//*[@data-tesid='email']").setValue("1");
+
+        $("[id=email]").setValue("1");
+        $(by("id", "email" )).setValue("1");
         $(byId("email")).setValue("1");
         $("#email").setValue("1");
-        $x(xpachExpression:"//*[@id='email']") setValue("1");
+
+
+
 
 
 
